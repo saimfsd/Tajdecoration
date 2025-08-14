@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taj Decoration Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      color: white;
+      font-family: 'Segoe UI', sans-serif;
+    }
+   
+    .header a {
+      text-decoration: none;
+      font-size: 24px;
+      color: rgb(255, 255, 255);
+    }
+  .tabs span,
+  .tabs a span {
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 25px;
+    margin: 0 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .tabs .active {
+    background-color: white;
+    color: #212529;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.3);
+  }
+
+  .tabs a span {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+  }
+
+  .tabs a span:hover {
+    background-color: white;
+    color: #000;
+  }
+
+  .gallery-section {
+  padding: 40px 20px;
+  animation: fadeInUp 1s ease forwards;
+}
+
+.gallery-img {
+  background-color: #444;
+  height: 200px;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  overflow: hidden;
+  object-fit: cover;
+}
+
+.gallery-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px #888;
+}
+
+.gallery-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: zoomInImg 0.8s ease-in-out;
+}
+
+    @keyframes zoomInImg {
+      from { transform: scale(0.95); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 576px) {
+      .tabs {
+        font-size: 20px;
+        gap: 15px;
+        bottom: 20px;
+      }
+      .call-now {
+        font-size: 14px;
+        bottom: 60px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <a href="../index.html">← Back home</a>
+  </div>
+
+  <!-- Hero Banner with Tabs -->
+  <div class="hero text-center animate__animated animate__fadeIn">
+    <a href="./Images.html" class="text-decoration-none">
+    <div class="tabs animate__animated animate__fadeInUp animate__delay-1s">
+      <a href="./Images.html"><span class="active" id="./Images.html" >Images</span></a>
+     
+         <a href="./Images.html" class="text-decoration-none">
+       <a href="./video.html"><span class="active">Video</span></a>
+      </a>
+    </div>
+  </div>
+
+  <!-- Gallery Grid -->
+  <div class="container gallery-section animate__animated animate__fadeInUp animate__delay-2s">
+
+    <div class="row g-3">
+  
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://sigaram.co.in/decorations/wp-content/uploads/sites/7/2014/08/Sakthi-Wedding-004-1024x512.jpg" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://sigaram.co.in/decorations/wp-content/uploads/sites/7/2014/08/Sakthi-Wedding-004-1024x512.jpg" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://www.surprisemachi.com/cdn/shop/files/Wedding_Banner.jpg?v=1743159124&width=2400" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://cdn.7eventzz.com/17/1742279896862.webp" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://media.istockphoto.com/id/471906412/photo/beautiful-table-setting-for-an-wedding-reception-or-an-event.jpg?s=612x612&w=0&k=20&c=knlIBspy-ZKuQV7bUVr_eclJmyC24ShNAva_Jh9Rwfc=" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://www.freshfruitsbasket.com/wp-content/uploads/2024/11/birthday-decoration-1.webp" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://thejarvi.com/wp-content/uploads/2023/02/WED0007.jpg" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://thejarvi.com/wp-content/uploads/2023/02/WED0007.jpg" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://www.freshfruitsbasket.com/wp-content/uploads/2024/11/birthday-decoration-1.webp" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="gallery-img w-100">
+          <img src="https://www.freshfruitsbasket.com/wp-content/uploads/2024/11/birthday-decoration-1.webp" class="img-fluid rounded" alt="Image 1">
+        </div>
+      </div>
+
+      <!-- ...repeat for all other images -->
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white pt-5 pb-3">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase mb-3">Taj Decoration</h5>
+          <p>Bringing elegance and creativity to your events. From weddings to corporate gatherings, we turn your vision into a beautiful reality.</p>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="#home" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="#about" class="text-white text-decoration-none">About Us</a></li>
+            <li><a href="#services" class="text-white text-decoration-none">Services</a></li>
+            <li><a href="#gallery" class="text-white text-decoration-none">Gallery</a></li>
+            <li><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <h5 class="text-uppercase mb-3">Get in Touch</h5>
+          <p><i class="bi bi-geo-alt-fill me-2"></i> Amner , Th.warud ,dis Amravati nagpur road / Maharashtra</p>
+          <p><i class="bi bi-envelope-fill me-2"></i> tajdecor@example.com</p>
+          <p><i class="bi bi-phone-fill me-2"></i> 8317297935</p>
+          <div class="mt-3">
+            <a href="#" class="text-white me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-white me-3"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="border-light" />
+
+      <div class="text-center">
+        <p class="mb-0">© 2025 Taj Decoration. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
