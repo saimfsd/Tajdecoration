@@ -225,6 +225,60 @@
     transform: scale(1.1);
     color: white;
   }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  .hamburger div {
+    height: 3px;
+    background-color: white;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+  
+  /* Media Query for screens <= 680px */
+  @media (max-width: 680px) {
+
+    .nav-links {
+      display: none;
+      flex-direction: row; /* keep links in a row */
+      justify-content: space-around; /* spread links evenly */
+      align-items: center;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* slightly darker */
+      position: absolute;
+      top: 50px; /* below header */
+      left: 0;
+      padding: 5px 0; /* smaller vertical padding */
+      z-index: 999;
+    }
+  
+    .nav-links.show {
+      display: flex;
+    }
+  
+    .nav-links a {
+      padding: 5px 10px; /* tighter spacing */
+      font-size: 14px; /* smaller font for mobile */
+      text-align: center;
+    }
+  
+    .hamburger {
+      display: flex; /* Show hamburger */
+      cursor: pointer;
+    }
+  
+    .dropdown:hover .dropdown-menu {
+      position: relative;
+      top: 0;
+      background-color: transparent;
+    }
+  }
 
   @keyframes zoomEffect {
     0% {
